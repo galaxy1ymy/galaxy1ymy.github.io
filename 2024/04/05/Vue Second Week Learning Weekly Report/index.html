@@ -18,18 +18,22 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="目录 Vue-cli Webpack vue-router   一.Vue-cli1.1 什么是vue-clivue-cli官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板 1.1.1 主要功能 统一的目录结构 本地调试 热部署 单元测试 集成打包上线  1.1.2 环境准备 安装Node.js（以管理员身份打开命令提示符cmd） 检查Node是否安装成功">
+        <meta name="description" content="目录 Vue-cli Webpack vue-router 整合ElementUI ElementUI登陆界面   一.Vue-cli1.1 .什么是vue-clivue-cli官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板 1.1.1 .主要功能 统一的目录结构 本地调试 热部署 单元测试 集成打包上线  1.1.2 .环境准备 安装Node.js（以管">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Vue Second Week Learning Weekly Report">
 <meta property="og:url" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="目录 Vue-cli Webpack vue-router   一.Vue-cli1.1 什么是vue-clivue-cli官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板 1.1.1 主要功能 统一的目录结构 本地调试 热部署 单元测试 集成打包上线  1.1.2 环境准备 安装Node.js（以管理员身份打开命令提示符cmd） 检查Node是否安装成功">
+<meta property="og:description" content="目录 Vue-cli Webpack vue-router 整合ElementUI ElementUI登陆界面   一.Vue-cli1.1 .什么是vue-clivue-cli官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板 1.1.1 .主要功能 统一的目录结构 本地调试 热部署 单元测试 集成打包上线  1.1.2 .环境准备 安装Node.js（以管">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/demo.png">
 <meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/demo2.png">
 <meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/db.png">
+<meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/router.png">
+<meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/elementui.png">
+<meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/err.png">
+<meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/login.png">
 <meta property="article:published_time" content="2024-04-05T11:41:50.000Z">
-<meta property="article:modified_time" content="2024-04-09T15:03:12.598Z">
+<meta property="article:modified_time" content="2024-04-16T14:45:41.709Z">
 <meta property="article:author" content="galaxy1ymy">
 <meta property="article:tag" content="Vue2.0Second Week Learning Weekly Report">
 <meta name="twitter:card" content="summary">
@@ -452,8 +456,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-04-09 23:03:12</span>
-            <span class="mobile">2024-04-09 23:03:12</span>
+            <span class="desktop">2024-04-16 22:45:41</span>
+            <span class="mobile">2024-04-16 22:45:41</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -507,17 +511,19 @@
 <li>Vue-cli</li>
 <li>Webpack</li>
 <li>vue-router</li>
+<li>整合ElementUI</li>
+<li>ElementUI登陆界面</li>
 </ol>
 <hr>
-<h1 id="一-Vue-cli"><a href="#一-Vue-cli" class="headerlink" title="一.Vue-cli"></a>一.Vue-cli</h1><h4 id="1-1-什么是vue-cli"><a href="#1-1-什么是vue-cli" class="headerlink" title="1.1 什么是vue-cli"></a>1.1 什么是vue-cli</h4><p><code>vue-cli</code>官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板</p>
-<h5 id="1-1-1-主要功能"><a href="#1-1-1-主要功能" class="headerlink" title="1.1.1 主要功能"></a>1.1.1 主要功能</h5><ul>
+<h1 id="一-Vue-cli"><a href="#一-Vue-cli" class="headerlink" title="一.Vue-cli"></a>一.Vue-cli</h1><h4 id="1-1-什么是vue-cli"><a href="#1-1-什么是vue-cli" class="headerlink" title="1.1 .什么是vue-cli"></a>1.1 .什么是vue-cli</h4><p><code>vue-cli</code>官方提供的一个脚手架（预先定义好的目录结构及基础代码），用于快速生成一个vue的项目模板</p>
+<h5 id="1-1-1-主要功能"><a href="#1-1-1-主要功能" class="headerlink" title="1.1.1 .主要功能"></a>1.1.1 .主要功能</h5><ul>
 <li>统一的目录结构</li>
 <li>本地调试</li>
 <li>热部署</li>
 <li>单元测试</li>
 <li>集成打包上线</li>
 </ul>
-<h5 id="1-1-2-环境准备"><a href="#1-1-2-环境准备" class="headerlink" title="1.1.2 环境准备"></a>1.1.2 环境准备</h5><ul>
+<h5 id="1-1-2-环境准备"><a href="#1-1-2-环境准备" class="headerlink" title="1.1.2 .环境准备"></a>1.1.2 .环境准备</h5><ul>
 <li>安装Node.js（以管理员身份打开命令提示符cmd）<ul>
 <li>检查Node是否安装成功 <code>node -v</code></li>
 <li>检查npm <code>npm -v</code></li>
@@ -533,19 +539,19 @@
 </ul>
 </li>
 </ul>
-<h4 id="1-2-创建一个快速的vue应用程序-demo"><a href="#1-2-创建一个快速的vue应用程序-demo" class="headerlink" title="1.2 创建一个快速的vue应用程序-demo"></a>1.2 创建一个快速的vue应用程序-demo</h4><ul>
+<h4 id="1-2-创建一个快速的vue应用程序-demo"><a href="#1-2-创建一个快速的vue应用程序-demo" class="headerlink" title="1.2 .创建一个快速的vue应用程序-demo"></a>1.2 .创建一个快速的vue应用程序-demo</h4><ul>
 <li>选择指定目录，cd下</li>
 <li>初始化 ，基于webpack，通过webpack打包 <code>vue init webpack 工程名字</code></li>
 <li><img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/demo.png" class title="demo"></li>
 <li><img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/demo2.png" class></li>
 </ul>
 <hr>
-<h1 id="二-Webpack"><a href="#二-Webpack" class="headerlink" title="二.Webpack"></a>二.Webpack</h1><h3 id="2-1webpack简介"><a href="#2-1webpack简介" class="headerlink" title="2.1webpack简介"></a>2.1webpack简介</h3><h4 id="2-1-1简介"><a href="#2-1-1简介" class="headerlink" title="2.1.1简介"></a>2.1.1简介</h4><p>​	本质上，webpack是一个现代JavaScript应用程序静态模块打包器(module bundler)。当webpack处理应用程序时，它会递归地构建一个依赖关系图，其中包含应用程序需要的每一个模块，然后将所有的模块打包成一个或多个bundle。</p>
-<h4 id="2-1-2现状"><a href="#2-1-2现状" class="headerlink" title="2.1.2现状"></a>2.1.2现状</h4><p>​	当今越来越多的网站已经从王爷模式进化到WebApp模式。它们运行在现代浏览器里，使用HTML5、CSS3、ES6等技术来开发丰富功能，网页已经不仅仅是完成浏览器的基本需求。</p>
+<h1 id="二-Webpack"><a href="#二-Webpack" class="headerlink" title="二.Webpack"></a>二.Webpack</h1><h3 id="2-1-webpack简介"><a href="#2-1-webpack简介" class="headerlink" title="2.1.webpack简介"></a>2.1.webpack简介</h3><h4 id="2-1-1-简介"><a href="#2-1-1-简介" class="headerlink" title="2.1.1.简介"></a>2.1.1.简介</h4><p>​	本质上，webpack是一个现代JavaScript应用程序静态模块打包器(module bundler)。当webpack处理应用程序时，它会递归地构建一个依赖关系图，其中包含应用程序需要的每一个模块，然后将所有的模块打包成一个或多个bundle。</p>
+<h4 id="2-1-2-现状"><a href="#2-1-2-现状" class="headerlink" title="2.1.2.现状"></a>2.1.2.现状</h4><p>​	当今越来越多的网站已经从王爷模式进化到WebApp模式。它们运行在现代浏览器里，使用HTML5、CSS3、ES6等技术来开发丰富功能，网页已经不仅仅是完成浏览器的基本需求。</p>
 <p>​	WebApp通常是一个SPA（单页面应用），每一个视图通过异步的方式加载，这导致页面初始化和使用过程中会加载越来越多的JS代码，给前端的开发流程和资源组织带来了巨大挑战。</p>
-<h3 id="2-2-安装WebPack"><a href="#2-2-安装WebPack" class="headerlink" title="2.2 安装WebPack"></a>2.2 安装WebPack</h3><h4 id="2-2-1-安装-以管理员身份运行cmd"><a href="#2-2-1-安装-以管理员身份运行cmd" class="headerlink" title="2.2.1 安装(以管理员身份运行cmd )"></a>2.2.1 安装(以管理员身份运行cmd )</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack -g</span><br><span class="line">npm install webpack-cli -g</span><br></pre></td></tr></table></figure></div>
+<h3 id="2-2-安装WebPack"><a href="#2-2-安装WebPack" class="headerlink" title="2.2 .安装WebPack"></a>2.2 .安装WebPack</h3><h4 id="2-2-1-安装-以管理员身份运行cmd"><a href="#2-2-1-安装-以管理员身份运行cmd" class="headerlink" title="2.2.1.安装(以管理员身份运行cmd )"></a>2.2.1.安装(以管理员身份运行cmd )</h4><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install webpack -g</span><br><span class="line">npm install webpack-cli -g</span><br></pre></td></tr></table></figure></div>
 
-<h3 id="2-3-使用"><a href="#2-3-使用" class="headerlink" title="2.3 使用"></a>2.3 使用</h3><h4 id="2-3-1-配置"><a href="#2-3-1-配置" class="headerlink" title="2.3.1 配置"></a>2.3.1 配置</h4><p>创建<code>webpack.config.js</code>配置文件</p>
+<h3 id="2-3-使用"><a href="#2-3-使用" class="headerlink" title="2.3 .使用"></a>2.3 .使用</h3><h4 id="2-3-1-配置"><a href="#2-3-1-配置" class="headerlink" title="2.3.1. 配置"></a>2.3.1. 配置</h4><p>创建<code>webpack.config.js</code>配置文件</p>
 <ul>
 <li><code>entry:入口文件，指定WebPack用哪个文件作为项目的入口</code></li>
 <li><code>output：输出，指定WebPack把处理完成的文件放置到指定路径</code></li>
@@ -558,23 +564,79 @@
 
 <div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123; </span><br><span class="line">	<span class="attr">entry</span>:<span class="string">&quot;./modules/main.js&quot;</span>,</span><br><span class="line">	<span class="attr">output</span>:&#123;</span><br><span class="line">		<span class="attr">filename</span>:<span class="string">&quot;./js/bundle.js&quot;</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">watch</span>: <span class="literal">false</span>  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<h4 id="2-3-2-导出模块"><a href="#2-3-2-导出模块" class="headerlink" title="2.3.2 导出模块"></a>2.3.2 导出模块</h4><p>新建<code>.js</code>文件，当作导出模块，使用<code>exports</code>定义<code>sayHi</code>方法</p>
+<h4 id="2-3-2-导出模块"><a href="#2-3-2-导出模块" class="headerlink" title="2.3.2. 导出模块"></a>2.3.2. 导出模块</h4><p>新建<code>.js</code>文件，当作导出模块，使用<code>exports</code>定义<code>sayHi</code>方法</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">exports.sayHi =function()&#123;</span><br><span class="line">	document.write(&quot;&lt;div&gt;Hello WebPack&lt;/div&gt;&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 
-<h4 id="2-3-3-接收"><a href="#2-3-3-接收" class="headerlink" title="2.3.3 接收"></a>2.3.3 接收</h4><p>新建<code>.js</code>文件，当作引用模块，调用<code>sayH</code>i方法</p>
+<h4 id="2-3-3-接收"><a href="#2-3-3-接收" class="headerlink" title="2.3.3 .接收"></a>2.3.3 .接收</h4><p>新建<code>.js</code>文件，当作引用模块，调用<code>sayH</code>i方法</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var hello = require(&quot;./hello&quot;);</span><br><span class="line">hello.sayHi();</span><br></pre></td></tr></table></figure></div>
 
-<h4 id="2-3-4-打包"><a href="#2-3-4-打包" class="headerlink" title="2.3.4 打包"></a>2.3.4 打包</h4><img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/db.png" class title="db">
+<h4 id="2-3-4-打包"><a href="#2-3-4-打包" class="headerlink" title="2.3.4 .打包"></a>2.3.4 .打包</h4><img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/db.png" class title="db">
 
 <p>打包完成后目录下会出现<code>dis</code>t文件</p>
-<h4 id="2-3-5-查看效果"><a href="#2-3-5-查看效果" class="headerlink" title="2.3.5 查看效果"></a>2.3.5 查看效果</h4><p>新建<code>index.html</code>文件</p>
+<h4 id="2-3-5-查看效果"><a href="#2-3-5-查看效果" class="headerlink" title="2.3.5 .查看效果"></a>2.3.5 .查看效果</h4><p>新建<code>index.html</code>文件</p>
 <div class="highlight-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;dist/js/bundle.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
 
 <p>在更改导出模块内容时，每次都要webpack一下，可以在命令提示行输入<code>webpack --watch</code>（效果同配置文件里的<code>watch:true</code>一样）以避免每次都要webpack一下</p>
 <hr>
-<h1 id="三-vue-router"><a href="#三-vue-router" class="headerlink" title="三.vue-router"></a>三.vue-router</h1><h3 id="3-1介绍"><a href="#3-1介绍" class="headerlink" title="3.1介绍"></a>3.1介绍</h3><p>vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。</p>
+<h1 id="三-vue-router"><a href="#三-vue-router" class="headerlink" title="三.vue-router"></a>三.vue-router</h1><h3 id="3-1-介绍"><a href="#3-1-介绍" class="headerlink" title="3.1.介绍"></a>3.1.介绍</h3><p>vue-router是Vue.js官方的路由插件，它和vue.js是深度集成的，适合用于构建单页面应用。</p>
 <p>vue-router是基于路由和组件的\n\n路由用户设定访问路径的，将路径和组件映射起来。\n在vue-router的单页面应用中，页面的路径的改变就是组件的切换</p>
-<h3 id="3-2-安装和使用"><a href="#3-2-安装和使用" class="headerlink" title="3.2 安装和使用"></a>3.2 安装和使用</h3>
+<h3 id="3-2-安装"><a href="#3-2-安装" class="headerlink" title="3.2 .安装"></a>3.2 .安装</h3><p><code>vue-router</code>是一个插件包，在文件目录下直接<code>npm i vue-router</code> 是下载最新版，最新版不兼容vue2。所以我们要下载兼容版本 <code>npm i vue-router@3.5.2</code>，此时在<code>package.json</code>文件中可以看到 <code>&quot;vue-router&quot;: &quot;^3.5.2&quot;</code>表示安装成功。</p>
+<img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/router.png" class title="router">
+
+<h3 id="3-3-引入"><a href="#3-3-引入" class="headerlink" title="3.3.引入"></a>3.3.引入</h3><p>如果在一个模块化工程中使用它，必须通过<code>vue.use()</code>明确安装路由功能</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">VueRouter</span> <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">VueRouter</span>);</span><br></pre></td></tr></table></figure></div>
+
+
+
+<hr>
+<h1 id="四-整合ElementUI"><a href="#四-整合ElementUI" class="headerlink" title="四. 整合ElementUI"></a>四. 整合ElementUI</h1><h3 id="3-1-创建工程"><a href="#3-1-创建工程" class="headerlink" title="3.1.创建工程"></a>3.1.创建工程</h3><h4 id="3-1-1-创建一个名为vue-elementui的工具"><a href="#3-1-1-创建一个名为vue-elementui的工具" class="headerlink" title="3.1.1.创建一个名为vue-elementui的工具"></a>3.1.1.创建一个名为<code>vue-elementui</code>的工具</h4><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 以管理员省份打开cmd ,使用webpack打包工具初始化一个名为vue-elementui的工程</span><br><span class="line">vue init webpack vue-elementui</span><br></pre></td></tr></table></figure></div>
+
+<img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/elementui.png" class title="elementui">
+
+<h4 id="3-1-2-cd-进入项目中"><a href="#3-1-2-cd-进入项目中" class="headerlink" title="3.1.2 .cd 进入项目中"></a>3.1.2 .cd 进入项目中</h4><p><code>cd vue-elementui</code></p>
+<h4 id="3-1-3-安装依赖"><a href="#3-1-3-安装依赖" class="headerlink" title="3.1.3 . 安装依赖"></a>3.1.3 . 安装依赖</h4><p>需要安装<code>vue-router</code>、<code>element-ui</code>、<code>sass-loader</code>、<code>node-sass</code>四个插件</p>
+<h5 id="3-1-3-1-安装vue-router"><a href="#3-1-3-1-安装vue-router" class="headerlink" title="3.1.3.1.安装vue-router"></a>3.1.3.1.安装vue-router</h5><p>此时遇到了一个问题<code>npm ERR!</code>，这是因为我的项目中有两个不兼容的Vue版本引起的，此项目使用的是<code>Vue 2.5.2</code>，但是<code>vue-router</code>需要的是<code>Vue 3.2.0</code>或更高版本。我的<code>package.json</code>是 <code>&quot;vue-router&quot;: &quot;^4.3.0&quot;</code></p>
+<img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/err.png" class title="err">
+
+<p><strong>解决方案</strong></p>
+<ol>
+<li><p>第一种方法是升级项目中的 Vue 版本，使其与 <code>vue-router</code> 的要求匹配。可以在项目的 <code>package.json</code> 文件中将 Vue 的版本号改为 3.2.0 或更高版本，然后重新运行 <code>npm install</code> 命令来安装依赖。如果选择升级 Vue 版本，可能还需要检查一下项目中是否有其他依赖项也需要相应的升级。</p>
+</li>
+<li><p>第二种方法是降级 <code>vue-router</code> 的版本，使其与项目中的 Vue 版本匹配。可以在项目的 <code>package.json</code> 文件中将 <code>vue-router</code> 的版本号改为适用于 <code>Vue 2.x</code> 的版本，然后重新运行 <code>npm install</code> 命令。</p>
+</li>
+<li><p>第三种方法是直接安装低版本的 <code>vue-router</code>  :</p>
+<p><code>npm install vue-router@^3.5.2</code></p>
+</li>
+</ol>
+<p>这边我选择第三中解决方案</p>
+<h5 id="3-1-3-2-安装element-ui"><a href="#3-1-3-2-安装element-ui" class="headerlink" title="3.1.3.2. 安装element-ui"></a>3.1.3.2. 安装element-ui</h5><p><strong>npm安装</strong></p>
+<p><code>npm i element-ui -s</code></p>
+<h5 id="3-1-3-3-安装sass-loader、node-sass"><a href="#3-1-3-3-安装sass-loader、node-sass" class="headerlink" title="3.1.3.3.安装sass-loader、node-sass"></a>3.1.3.3.安装sass-loader、node-sass</h5><p><code>npm install sass-loader@7.3.1 node-sass --save-dev</code> 最新版本容易出现错误</p>
+<h5 id="3-1-3-4-安装所有依赖"><a href="#3-1-3-4-安装所有依赖" class="headerlink" title="3.1.3.4.安装所有依赖"></a>3.1.3.4.安装所有依赖</h5><p><code>npm install</code></p>
+<h3 id="3-2-引入"><a href="#3-2-引入" class="headerlink" title="3.2.引入"></a>3.2.引入</h3><p>在<code>main.js</code>中写入</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ElementUI</span> <span class="keyword">from</span> <span class="string">&#x27;element-ui&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;element-ui/lib/theme-chalk/index.css&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">ElementUI</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">    <span class="attr">el</span>:<span class="string">&#x27;app&#x27;</span>,</span><br><span class="line">    <span class="attr">render</span>: <span class="function"><span class="params">h</span> =&gt;</span> <span class="title function_">h</span>(<span class="title class_">App</span>)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-3-运行"><a href="#3-3-运行" class="headerlink" title="3.3.运行"></a>3.3.运行</h3><p><code>npm run dev</code></p>
+
+
+
+
+<hr>
+<h1 id="五-ElementUI登陆界面"><a href="#五-ElementUI登陆界面" class="headerlink" title="五.ElementUI登陆界面"></a>五.ElementUI登陆界面</h1><h3 id="5-1-main-js"><a href="#5-1-main-js" class="headerlink" title="5.1. main.js"></a>5.1. main.js</h3><div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// The Vue build version to load with the `import` command</span></span><br><span class="line"><span class="comment">// (runtime-only or standalone) has been set in webpack.base.conf with an alias.</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">VueRouter</span> <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span></span><br><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;./router&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ElementUI</span> <span class="keyword">from</span> <span class="string">&#x27;element-ui&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;element-ui/lib/theme-chalk/index.css&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">VueRouter</span>);</span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">ElementUI</span>);</span><br><span class="line"><span class="title class_">Vue</span>.<span class="property">config</span>.<span class="property">productionTip</span> = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* eslint-disable no-new */</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app&#x27;</span>,</span><br><span class="line">  router,</span><br><span class="line">  <span class="attr">render</span>: <span class="function"><span class="params">h</span> =&gt;</span> <span class="title function_">h</span>(<span class="title class_">App</span>)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-2-Login-vue"><a href="#5-2-Login-vue" class="headerlink" title="5.2.Login.vue"></a>5.2.Login.vue</h3><p>在src目录下创建目录views，并创建Login.vue</p>
+<p>在使用scss时报错<code>Module build failed: Error: Node Sass version 9.0.0 is incompatible with ^4.0.0.</code>，这是node scss版本冲突的原因，<strong>解决办法</strong>为：</p>
+<p>​                                 <code>npm uninstall node-sass</code><br>​                                 <code>npm i -D sass</code></p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">    &lt;el-form ref=&quot;form&quot; :model=&quot;form&quot; class=&quot;login-box&quot;&gt;</span><br><span class="line">      &lt;h3 class=&quot;login-title&quot;&gt;欢迎登录&lt;/h3&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;用户名&quot;&gt;</span><br><span class="line">        &lt;el-input type=&quot;text&quot; v-model=&#x27;form.name&#x27; placeholder=&quot;请输入用户名&quot;&gt;&lt;/el-input&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;el-form-item label=&quot;密码&quot;&gt;</span><br><span class="line">        &lt;el-input type=&quot;password&quot; v-model=&quot;form.password&quot; placeholder=&quot;请输入密码&quot;&gt;&lt;/el-input&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">      &lt;el-form-item&gt;</span><br><span class="line">        &lt;el-button type=&quot;primary&quot; @click=&quot;onSubmit&quot;&gt;登录&lt;/el-button&gt;</span><br><span class="line">      &lt;/el-form-item&gt;</span><br><span class="line">    &lt;/el-form&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">  export default&#123;</span><br><span class="line">    name:&#x27;Login&#x27;,</span><br><span class="line">    data()&#123;</span><br><span class="line">      return&#123;</span><br><span class="line">        form:&#123;</span><br><span class="line">          name:&#x27;&#x27;,</span><br><span class="line">          password:&#x27;&#x27;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods:&#123;</span><br><span class="line">      onSubmit()&#123;</span><br><span class="line">        alert(&quot;登录成功!&quot;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style lang=&quot;scss&quot; scoped&gt;</span><br><span class="line">  .login-box&#123;</span><br><span class="line">    width:350px;</span><br><span class="line">    margin: 150px auto;</span><br><span class="line">    border:1px solid #DCDFE6 ;</span><br><span class="line">    padding:20px;</span><br><span class="line">    border-radius:5px;</span><br><span class="line">    box-shadow:0 0 30px;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line">  .login-title&#123;</span><br><span class="line">    text-align: center;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-3-index-js"><a href="#5-3-index-js" class="headerlink" title="5.3.index.js"></a>5.3.index.js</h3><p>在src目录下创建router，并创建index.js,设置路由</p>
+<div class="highlight-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">VueRouter</span> <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Login</span> <span class="keyword">from</span>  <span class="string">&#x27;../views/Login&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">VueRouter</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> <span class="title class_">VueRouter</span>(&#123;    <span class="comment">//配置路由</span></span><br><span class="line">  <span class="attr">routes</span>:[&#123;</span><br><span class="line">    <span class="comment">//登录页</span></span><br><span class="line">    <span class="attr">path</span>:<span class="string">&#x27;/login&#x27;</span>,</span><br><span class="line">    <span class="attr">name</span>:<span class="string">&#x27;Login&#x27;</span>,</span><br><span class="line">    <span class="attr">component</span>:<span class="title class_">Login</span>    <span class="comment">//组件</span></span><br><span class="line">  &#125;]</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-4-运行"><a href="#5-4-运行" class="headerlink" title="5.4.运行"></a>5.4.运行</h3><p><code>http://localhost:8080/#/login</code></p>
+<img lazyload src="/images/loading.svg" data-src="/2024/04/05/Vue%20Second%20Week%20Learning%20Weekly%20Report/login.png" class title="login">
+
+<hr>
+
         </div>
 
         
@@ -588,7 +650,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-04-09 23:03:12
+                    :</strong> 2024-04-16 22:45:41
             </li>
         
         <li>
@@ -696,7 +758,7 @@
     <div class="post-toc">
         <div class="toc-title">On this page</div>
         <div class="page-title">Vue Second Week Learning Weekly Report</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-Vue-cli"><span class="nav-text">一.Vue-cli</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-Webpack"><span class="nav-text">二.Webpack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1webpack%E7%AE%80%E4%BB%8B"><span class="nav-text">2.1webpack简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%AE%89%E8%A3%85WebPack"><span class="nav-text">2.2 安装WebPack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E4%BD%BF%E7%94%A8"><span class="nav-text">2.3 使用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-vue-router"><span class="nav-text">三.vue-router</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1%E4%BB%8B%E7%BB%8D"><span class="nav-text">3.1介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8"><span class="nav-text">3.2 安装和使用</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95"><span class="nav-text">目录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80-Vue-cli"><span class="nav-text">一.Vue-cli</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C-Webpack"><span class="nav-text">二.Webpack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-webpack%E7%AE%80%E4%BB%8B"><span class="nav-text">2.1.webpack简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%AE%89%E8%A3%85WebPack"><span class="nav-text">2.2 .安装WebPack</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E4%BD%BF%E7%94%A8"><span class="nav-text">2.3 .使用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89-vue-router"><span class="nav-text">三.vue-router</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E4%BB%8B%E7%BB%8D"><span class="nav-text">3.1.介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%AE%89%E8%A3%85"><span class="nav-text">3.2 .安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%BC%95%E5%85%A5"><span class="nav-text">3.3.引入</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B-%E6%95%B4%E5%90%88ElementUI"><span class="nav-text">四. 整合ElementUI</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%88%9B%E5%BB%BA%E5%B7%A5%E7%A8%8B"><span class="nav-text">3.1.创建工程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%BC%95%E5%85%A5"><span class="nav-text">3.2.引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E8%BF%90%E8%A1%8C"><span class="nav-text">3.3.运行</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94-ElementUI%E7%99%BB%E9%99%86%E7%95%8C%E9%9D%A2"><span class="nav-text">五.ElementUI登陆界面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-main-js"><span class="nav-text">5.1. main.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-Login-vue"><span class="nav-text">5.2.Login.vue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-index-js"><span class="nav-text">5.3.index.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-%E8%BF%90%E8%A1%8C"><span class="nav-text">5.4.运行</span></a></li></ol></li></ol></li></ol>
 
     </div>
 </div>
