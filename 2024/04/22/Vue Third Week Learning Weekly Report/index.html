@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/22/Vue%20Third%20Week%20Learning%20Weekly%20Report/axioserror.png">
 <meta property="og:image" content="https://galaxy1ymy.github.io/2024/04/22/Vue%20Third%20Week%20Learning%20Weekly%20Report/json.png">
 <meta property="article:published_time" content="2024-04-22T10:49:01.000Z">
-<meta property="article:modified_time" content="2024-05-05T08:52:30.994Z">
+<meta property="article:modified_time" content="2024-05-05T09:01:14.024Z">
 <meta property="article:author" content="galaxy1ymy">
 <meta property="article:tag" content="Vue2.0 Third Week Learning Weekly Report">
 <meta name="twitter:card" content="summary">
@@ -455,8 +455,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-05-05 16:52:30</span>
-            <span class="mobile">2024-05-05 16:52:30</span>
+            <span class="desktop">2024-05-05 17:01:14</span>
+            <span class="mobile">2024-05-05 17:01:14</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -631,13 +631,13 @@
 <h1><span id="六vuex操作对象">六.Vuex操作对象</span></h1><p>因为 sessionStorage 只能存储一个字符串，通过字符串来判断是否登录，但实际开发中存储的用户对象，并在不同的地方使用时取出来用。</p>
 <h2><span id="61vuex分成五个状态">6.1.<strong>Vuex分成五个状态：</strong></span></h2><p><strong>1.State 2.Getters 3.Mutations4.Actions 5.Module</strong></p>
 <ol>
-<li><p>**State **——提供唯一的公共数据源，所有共享的数据统一放到store的state进行储存，相似与data</p>
+<li><p><strong>State</strong>  ——提供唯一的公共数据源，所有共享的数据统一放到store的state进行储存，相似与data</p>
 <p>在vuex中state中定义数据，可以在任何组件中进行调用</p>
 <p>调用的方法一：在标签中直接使用<code>&lt;p&gt;&#123;&#123;$store.state.name&#125;&#125;&lt;/p&gt;</code></p>
 <p>调用的方法二：<code>this.$store.state.全局数据名称</code></p>
 <p>调用的方法三：从vuex中按需导入mapstate函数,在需要用的页面引入<code>import &#123; mapState &#125; from \&quot;vuex\&quot;;</code></p>
 </li>
-<li><p>**Mutation **——更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的事件类型 (type)和一个回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数 。</p>
+<li><p><strong>Mutation</strong>  ——更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。Vuex 中的 mutation 非常类似于事件：每个 mutation 都有一个字符串的事件类型 (type)和一个回调函数 (handler)。这个回调函数就是我们实际进行状态更改的地方，并且它会接受 state 作为第一个参数 。</p>
 <p>调用的方法一：使用commit触发Mutation操作</p>
 <p>调用的方法二：使用辅助函数进行操作,引入<code>import &#123; mapMutations&#125; from \&quot;vuex\&quot;;</code></p>
 </li>
@@ -690,7 +690,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2024-05-05 16:52:30
+                    :</strong> 2024-05-05 17:01:14
             </li>
         
         <li>
